@@ -1,0 +1,741 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    font-family: 'Segoe UI', Helvetica Nenu, Helvetica, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(180deg, #dddbd1, #d2dbdc);
+}
+
+.toplevel_page_firebase-chat .wp-submenu-wrap li:nth-child(last) {
+    background: #1da867;
+    color: #fff;
+  }
+
+span.chat_group_date {
+    display: flex;
+    max-width: 100% !important;
+    justify-content: center;
+    font-weight: bold;
+    color: #9CA1A3;
+  }
+/* chat plugin design by KK code start */
+.wp_chatee_rao_main_container {
+    padding: 20px 20px 20px 0px;
+}
+.wp_chatee_rao_login_register_form_screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 600px;
+    max-width: 1024px;
+    margin: auto;
+    box-shadow: 0px 0px 12px -2px rgba(43, 68, 135, 0.50);
+}
+
+.wp_chatee_rao_icon_image_area {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 20px;
+}
+.wp_chatee_rao_icon_image_area img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+.wp_chatee_rao_form_login_register_area {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 20px;
+}
+.wp_chatee_rao_tabs {
+    max-width: 450px;
+    margin: auto;
+}
+.wp_chatee_rao_tabs_titles ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+.wp_chatee_rao_tabs_titles ul li {
+    margin: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+}
+.wp_chatee_rao_tabs_titles ul li a {
+    display: block;
+    padding: 10px;
+    color: #2b4487;
+    background-color: #efefef;
+    font-weight: 700;
+    border-radius: 5px 5px 0px 0px;
+    transition: all 0.4s;
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.wp_chatee_rao_tabs_titles ul li a:hover,
+.wp_chatee_rao_tabs_titles ul li a.wp_chatee_rao_tab_link_active {
+    background-color: #2b4487;
+    color: #ffffff;
+}
+.wp_chatee_rao_form_list_tab_content {
+    padding: 20px;
+    border: 2px solid #efefef;
+    border-top: 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+.wp_chatee_rao_login_form_container,
+.wp_chatee_rao_register_form_container {
+    padding-top: 20px;
+}
+.wp_chatee_rao_form_group_input {
+    margin-bottom: 10px;
+}
+.wp_chatee_rao_form_group_input label {
+    display: block;
+    color: #818181;
+}
+.wp_chatee_rao_form_group_input .wp_chatee_rao_form_input {
+    background-color: #ffffff !important;
+    border: 1px solid #2b4487 !important;
+    color: #2b4487;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+span.wp_chatee_rao_register_description {
+    color: #2b4487;
+    font-size: 12px;
+}
+.wp_chatee_rao_error_notice {
+    background: #fff;
+    border: 1px solid #efefef;
+    border-left-color: #d63638;
+    border-left-width: 4px;
+    margin: 10px 0px;
+    padding: 5px 10px;
+}
+.wp_chatee_rao_success_notice {
+    background: #fff;
+    border: 1px solid #efefef;
+    border-left-color: #00a32a;
+    border-left-width: 4px;
+    margin: 10px 0px;
+    padding: 5px 10px;
+}
+.wp_chatee_rao_error_notice p,
+.wp_chatee_rao_success_notice p{
+    margin: 5px 0px;
+    padding: 2px;
+}
+.wp_chatee_rao_submit_button {
+    border-radius: 5px;
+    border: 1px solid #2b4487;
+    padding: 8px 20px;
+    color: #2b4487;
+    background-color: transparent;
+    display: table;
+    margin: 20px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.wp_chatee_rao_submit_button:hover {
+    background-color: #2b4487;
+    color: #ffffff;
+}
+
+.login-reset-actions {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+a#reset_firebase_password {
+    color: #2b4487;
+    text-decoration:none;
+}
+.wp_chatee_rao_chat_container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px -4px #2f4686;
+}
+.wp_chatee_rao_left_side_user_list {
+    flex: 0 0 350px;
+    max-width: 350px;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+.wp_chatee_rao_left_side_user_list_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    background-color: #eeeeee;
+    box-shadow: 0px 0px 10px 0px #2f4686;
+    z-index: 1;
+}
+.wp_chatee_rao_left_side_user_list_header .wp_chatee_rao_now_logedin {
+    flex: 0 0 calc(100% - 80px);
+    max-width: calc(100% - 80px);
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+}
+.wp_chatee_rao_left_side_user_list_header .wp_chatee_rao_now_logedin p {
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #2f4686;
+    font-weight: 500;
+}
+.wp_chatee_rao_left_side_user_list_header .wp_chatee_rao_now_logedin p span{
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #435a97;
+    font-weight: 500;
+    font-size: 12px;
+    max-width: 100%;
+    height: 16px;
+    display: block;
+}
+.wp_chatee_rao_left_side_user_list_header .wp_chatee_rao_now_logedin .wp_chatee_rao_user_avatar_default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 35px;
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    background-color: #2f4686;
+    border-radius: 50%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.wp_chatee_rao_left_side_user_list_header span {
+    flex: 0 0 40px;
+    max-width: 40px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #2f4686;
+    margin-left: auto;
+}
+.wp_chatee_rao_dropdown_menu_toggle {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px 0px #2f4686;
+    background-color: #ffffff;
+    z-index: 111;
+}
+.wp_chatee_rao_dropdown_menu_toggle a {
+    display: block;
+    padding: 5px 15px;
+    color: #2f4686 !important;
+    transition: all 0.4s;
+    text-decoration: none !important;
+    font-weight: 500;
+    outline: none;
+    box-shadow: none;
+}
+.wp_chatee_rao_dropdown_menu_toggle a:hover {
+    background-color: #ccd9ff;
+}
+.wp_chatee_rao_right_side_user_list {
+    flex: 0 0 calc(100% - 350px);
+    max-width: calc(100% - 350px);
+    height: calc(100vh - 40px - 32px - 70px);
+    overflow: hidden;
+    border-left: 1px solid #ccd9ff;
+    position: relative;
+}
+#wp_chatee_rao_start_chat_screen img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    opacity: 0.5;
+    max-width: 300px;
+    height: auto;
+}
+.wp_chatee_rao_right_side_user_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px #2f4686;
+    z-index: 1;
+}
+.wp_chatee_rao_right_side_user_header .wp_chatee_rao_open_chat_details {
+    flex: 0 0 calc(100% - 80px);
+    max-width: calc(100% - 80px);
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+}
+.wp_chatee_rao_right_side_user_header .wp_chatee_rao_open_chat_details p {
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #2f4686;
+    font-weight: 500;
+}
+.wp_chatee_rao_right_side_user_header .wp_chatee_rao_open_chat_details p span {
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #435a97;
+    font-weight: 500;
+    max-width: 100%;
+    font-size: 12px;
+    height: 16px;
+    justify-content: left;
+}
+.wp_chatee_rao_right_side_user_header .wp_chatee_rao_open_chat_details .wp_chatee_rao_user_avatar_default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 35px;
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    background-color: #2f4686;
+    border-radius: 50%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.wp_chatee_rao_right_side_user_header span {
+    flex: 0 0 40px;
+    max-width: 40px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #2f4686;
+    margin-left: auto;
+}
+.wp_chatee_rao_dropdown_attach_toggle {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px 0px #2f4686;
+    background-color: #ffffff;
+    z-index: 111;
+}
+.wp_chatee_rao_dropdown_attach_toggle a {
+    display: block;
+    padding: 5px 15px;
+    color: #2f4686 !important;
+    transition: all 0.4s;
+    text-decoration: none !important;
+    font-weight: 500;
+    outline: none;
+    box-shadow: none;
+}
+.wp_chatee_rao_dropdown_attach_toggle a:hover {
+    background-color: #ccd9ff;
+}
+.wp_chatee_rao_message_history {
+    height: calc(100vh - 40px - 32px - 70px - 120px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
+.wp_chatee_rao_chat_history {
+    margin: 0px;
+    height: calc(100vh - 40px - 32px - 70px - 115px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #eeeeee;
+    padding: 0 !important;
+}
+.wp_chatee_rao_chat_history .wp_chatee_rao_chat_item.active{
+    box-shadow: 0px 0px 10px 0px #2f4686;
+    background-color: #ffffff;
+} 
+.wp_chatee_rao_chat_history .wp_chatee_rao_chat_item {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 0 !important;
+    cursor: pointer;
+}
+.wp_chatee_rao_chat_history .wp_chatee_rao_chat_item > div {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px 10px 15px;
+    position: relative;
+}
+.wp_chatee_rao_chat_history .wp_chatee_rao_chat_item > div .wp_chatee_rao_user_avatar_default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 30px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-color: #2f4686;
+    border-radius: 50%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.wp_chatee_rao_chat_history .wp_chatee_rao_chat_item > div .wp_chatee_rao_name {
+    color: #2f4686;
+    font-size: 14px;
+    font-weight: 500;
+}
+.wp_chatee_rao_chat_history .wp_chatee_rao_chat_item > div .wp_chatee_rao_name span{
+    color: #435a97;
+    font-size: 12px;
+    font-weight: 500;
+}
+.wp_chatee_rao_chat_history .wp_chatee_rao_chat_item > div .badge {
+    border-radius: 50%;
+    background: #2f4686;
+    color: #ffffff;
+    position: absolute;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+}
+.wp_chatee_rao_message_single {
+    display: flex;
+    padding: 10px 0px;
+}
+.wp_chatee_rao_message_single .wp_chatee_rao_user_avatar_default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 30px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-color: #2f4686;
+    border-radius: 50%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.wp_chatee_rao_message_single .wp_chatee_rao_message_inner {
+    display: flex;
+    max-width: 70%;
+    min-width: 200px;
+    width: auto;
+    background-color: #efefef;
+    padding: 15px 15px 35px;
+    border-radius: 0px 15px 15px 15px;
+    position: relative;
+    flex-wrap: wrap;
+}
+.wp_chatee_rao_message_single.wp_chatee_rao_sent {
+    flex-direction: row-reverse;
+}
+.wp_chatee_rao_message_single.wp_chatee_rao_sent .wp_chatee_rao_user_avatar_default {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.wp_chatee_rao_message_single.wp_chatee_rao_sent .wp_chatee_rao_message_inner {
+    background-color: #ccd9ff;
+    border-radius: 15px 0px 15px 15px;
+}
+.wp_chatee_rao_message_single .wp_chatee_rao_message_inner p {
+    margin: 0px;
+    color: #2f4686;
+    font-size: 14px;
+}
+.wp_chatee_rao_message_single .wp_chatee_rao_message_inner p img {
+    width: 200px;
+}
+.wp_chatee_rao_message_time {
+    color: #818181;
+    position: absolute;
+    bottom: 10px;
+    right: 35px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.wp_chatee_rao_message_single .wp_chatee_rao_message_inner button {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    padding: 0px;
+    height: 20px;
+    width: 20px;
+}
+.wp_chatee_rao_chat_footer_send {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px #2f4686;
+}
+.wp_chatee_rao_send_message_box .wp_chatee_rao_form_input {
+    background-color: #ffffff !important;
+    border: 1px solid #2b4487 !important;
+    color: #2b4487;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.wp_chatee_rao_chat_footer_send span {
+    flex: 0 0 40px;
+    max-width: 40px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #2f4686;
+    margin-left: auto;
+}
+.wp_chatee_rao_chat_footer_send .wp_chatee_rao_send_message_box {
+    margin: 0px;
+    padding: 0px 5px;
+    flex: 0 0 calc(100% - 80px);
+    max-width: calc(100% - 80px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #2f4686;
+    font-weight: 500;
+}
+#wp_chatee_rao_send_emoji_panel {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+}
+.wp_chatee_rao_send_emoji_tabs_titles ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.wp_chatee_rao_send_emoji_tabs_titles ul li {
+    margin: 0;
+}
+.wp_chatee_rao_send_emoji_tabs_titles ul li a {
+    display: block;
+    padding: 10px;
+    color: #2b4487;
+    background-color: #efefef;
+    font-weight: 700;
+    border-radius: 5px 5px 0px 0px;
+    transition: all 0.4s;
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.wp_chatee_rao_send_emoji_tabs_titles ul li a.wp_chatee_rao_tab_link_active {
+    background-color: #2b4487;
+    color: #ffffff;
+}
+.wp_chatee_rao_emoji_list_tab_content {
+    padding: 15px;
+    background-color: #efefef;
+}
+.wp_chatee_rao_main_container ::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.wp_chatee_rao_main_container ::-webkit-scrollbar-track {
+  background: #ccd9ff;
+}
+.wp_chatee_rao_main_container ::-webkit-scrollbar-thumb {
+  background: #2f4686;
+}
+.wp_chatee_rao_search_toggle .inputs{
+    position: relative;
+  }
+.wp_chatee_rao_search_toggle .inputs i{
+    position: absolute;
+    top: 14px;
+    left: 4px;
+    color: #b8b9bc;
+    padding-left: 10px;
+}
+.wp_chatee_rao_search_toggle .form-control {
+    text-indent: 15px;
+    border: none;
+    height: 45px;
+    border-radius: 0px;
+    border-bottom: 1px solid #2F4686;
+    padding-left: 22px;
+}
+.wp_chatee_rao_search_toggle .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #eee;
+    outline: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #2F4686;
+}
+.wp_chatee_rao_search_toggle .form-control:focus  {
+    color: #2F4686;
+}
+.wp_chatee_rao_search_toggle .card{
+    padding: 0px;
+    margin: 0px;
+    max-width: unset;
+    border:none;
+}
+/**.wp_chatee_rao_search_toggle{
+    padding: 0px 10px;
+}*/
+.wp_chatee_rao_search_toggle .mt-3{
+    margin-top: 10px!important;
+}
+.wp_chatee_rao_send_message_box .wp_chatee_rao_form_input{
+    border: none !important;
+	width: 100%;
+    border-radius: none !important;
+	box-shadow: 0 0 0 transparent !important;
+}
+.wp_chatee_div_input:hover{
+    border: none;
+    border-radius: none;
+}
+
+.raopress-chat-upgrade-notice {
+    background: #2f4686;
+    margin: 20px 20px 20px 0;
+    color: #fff;
+    padding: 40px;
+	position: relative;
+}
+.raopress-chat-upgrade-notice .notice-dismiss:before{
+	font: normal 22px/20px dashicons;
+    width: 30px;
+    height: 30px;
+    padding: 9px;
+	color: white;
+}
+.raopress-chat-upgrade-notice .notice-dismiss{
+	right: 9px;
+	padding: 0px;
+}
+.raopress-chat-upgrade-notice .description {
+    text-align: center;
+    font-size: 30px;
+}
+
+.raopress-upgrade-button a {
+    text-decoration: none;
+    background: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2f4686;
+    /* margin-top: 30px; */
+}
+
+.raopress-upgrade-button {
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .wp_chatee_rao_left_side_user_list {
+        flex: 0 0 275px;
+        max-width: 275px;
+    }
+    .wp_chatee_rao_right_side_user_list {
+        flex: 0 0 calc(100% - 275px);
+        max-width: calc(100% - 275px);
+    }
+}
+@media (max-width: 782px) {
+    .wp_chatee_rao_main_container {
+        padding: 10px 10px 10px 0px;
+    }
+    .wp_chatee_rao_left_side_user_list {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .wp_chatee_rao_right_side_user_list {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .wp_chatee_rao_show {
+        display: block;
+    }
+    .wp_chatee_rao_hide {
+        display: none;
+    }
+    #wpbody-content {
+        padding-bottom: 50px !important;
+    }
+}
+
+@media (min-width: 783px) {
+    .wp_chatee_rao_left_side_user_list_header .wp_chatee_rao_hide_user_list_mobile,
+    .wp_chatee_rao_right_side_user_header .wp_chatee_rao_show_user_list_mobile {
+        display: none;
+    }
+}
+/* chat plugin design by KK code end */

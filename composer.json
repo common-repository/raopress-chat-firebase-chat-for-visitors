@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "RCFV\\": "src/"
+        }
+    },
+    "require": {
+        "kreait/firebase-php": "^6.3"
+    }
+}

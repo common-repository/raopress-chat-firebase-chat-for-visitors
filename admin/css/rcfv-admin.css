@@ -1,0 +1,13 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .form-table td input, select, textarea, .select2-container {
+  min-width: 75% !important;
+}
+#firebase_app_config {
+ min-height: 250px;
+}
+#firebase_db_config {
+ min-height: 500px;
+}
